@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <title> First Webpage</title>
+
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <h1 class="shark"> REGISTRATION FORM</h1>
+    <form>  
+    <div class="type">
+        <label>NAME:<span style="color:orangered">*</span></label>
+        <input id="name" class="type1" type="text" placeholder="Enter Your Name"/><br/><br/>
+        <span id="name-error" style="display: none">Please enter your name</span>
+    </div>
+    <div class="type">
+        <label>Email:<span style="color:orangered">*</span></label>
+        <input id="email" class="type1" type="email" placeholder="Enter Your Mail ID"/><br/><br/>
+        <span id="email-error" style="display: none">Please enter your mail ID</span>
+
+    </div>
+    <div class="type">
+        <label>Mobile Number:<span style="color:orangered">*</span></label>
+        <input  id="mobile" class="type1" type="number" placeholder="Enter Your Mobile Number"/><br/><br/>
+        <span id="mobile-error"  style="display: none">Please enter your mobile number</span>
+
+    </div>
+    <div class="type">   
+        <label>Password:<span style="color:orangered">*</span></label>
+        <input id="password"  class="type1"  type="password" placeholder="Enter the Password"/><br/><br/>
+        <span id="password-error" style="display: none">Please enter the password</span>
+
+    </div>
+    <div class="type">
+        <label> Confirm Password:<span style="color:orangered">*</span></label>
+        <input id="confirmpassword" class="type1" type="password" placeholder="Confirm Password"/><br/><br/>
+        <span id="confirmpassword-error"  style="display: none">Please enter the confirm password</span>
+
+    </div>
+    <div class="type">
+        <label> Gender:</label>
+        <input  type="radio" name="gender"/>Male
+        <input type="radio" name="gender"/>Female
+        <input type="radio" name="gender"/>Others<br/><br/>
+        
+
+
+    </div>
+    <div class="type">
+        <label> Languages Known:</label>
+        <input type="checkbox" name="lang"/>Python
+        <input type="checkbox" name="lang"/>C
+        <input type="checkbox" name="lang"/>C++
+        <input type="checkbox" name="lang"/>Java
+        <input type="checkbox" name="lang"/>HTML<br/><br/>
+    </div>
+    <div class="type">
+        <label>State:</label>
+        <select class="type1">
+            <option>select State</option>
+            <option>Tamil Nadu</option>
+            <option>Haryana</option>
+            <option>Karnataka</option>
+            <option>Goa</option>
+            <option>KeralaAndhra Pradesh</option>
+            <option></option>
+        </select><br/>
+    </div>
+        <div class="btn">
+        <input class="btn1" type="button"  value="submit" onclick="validate()"/>      
+    </div>
+</form>
+<script>
+    function validate(){
+        var name=document.getElementById("name").value;
+        var mail=document.getElementById("email").value;
+        var mob=document.getElementById("mobile").value;
+        var pwd=document.getElementById("password").value;
+        var cpwd=document.getElementById("confirmpassword").value;
+    console.log("------------",name);
+    if(name){
+        document.getElementById("name").style="border:6px solid green";
+        document.getElementById("name-error").style="display:none";
+    }
+    else{
+        document.getElementById("name").style="border:6px solid red";
+        document.getElementById("name-error").style="display:block;color:red";
+
+    }
+
+    if(mail){
+        document.getElementById("email").style="border:6px solid green";
+        document.getElementById("email-error").style="display:none";
+    }
+    else{
+        document.getElementById("email").style="border:6px solid red";
+        document.getElementById("email-error").style="display:block;color:red";
+
+    }
+
+    if(mob){
+        document.getElementById("mobile").style="border:6px solid green";
+        document.getElementById("mobile-error").style="display:none";
+    }
+    else{
+        document.getElementById("mobile").style="border:6px solid red";
+        document.getElementById("mobile-error").style="display:block;color:red";
+
+    }
+
+    if(pwd){
+        document.getElementById("password").style="border:6px solid green";
+        document.getElementById("password-error").style="display:none";
+    }
+    else{
+        document.getElementById("password").style="border:6px solid red";
+        document.getElementById("password-error").style="display:block;color:red";
+
+    }
+
+    if(cpwd){
+        document.getElementById("confirmpassword").style="border:6px solid green";
+        document.getElementById("confirmpassword-error").style="display:none";
+    }
+    else{
+        document.getElementById("confirmpassword").style="border:6px solid red";
+        document.getElementById("confirmpassword-error").style="display:block;color:red";
+
+    }
+    }
+</script>
+
+
+
+
+
+
+
+
+    </body>
+</html>
