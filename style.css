@@ -1,0 +1,55 @@
+
+.shark {
+    color: coral;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+    position: relative;
+    right: 150px;
+    font-style: italic;
+    font-family: math;
+}
+form {
+    padding: 40px;
+    left: 300px;
+    position: relative;
+    width: 500px;
+    text-align: center;
+    border-style: double;
+    border-radius: 20px;
+    background-color: aqua;
+    border-width:10px;
+    border-color: blue;
+    
+}
+.type{
+    font-family: emoji;
+    color: rgb(4, 8, 9);
+    position: relative;
+    width: auto;
+    text-align: left;
+    font-size: large;
+    padding: 15px;
+    font-style: oblique;
+
+}
+.btn{
+    margin: 15px;
+    margin-left: 100px;
+}
+.btn1{
+    padding:12px;
+    border-style:double;
+    border-radius:15px;
+    font-size: 15px;
+}
+.btn1:hover{
+    background-color: rgb(193, 34, 121);
+    cursor:pointer;
+    color:aliceblue;
+}
+.type1{
+    padding:7px;
+    border-radius:15px;
+    font-family: 'Courier New', Courier, monospace;
+}
